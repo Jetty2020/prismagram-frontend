@@ -11,8 +11,8 @@ const BOX_BORDER = "1px solid #e6e6e6";
    darkBlueColor: "#003569",
    boxBorder: "1px solid #e6e6e6",
    borderRadius: "4px",
-   whiteBox: `${BOX_BORDER};
-              ${BORDER_RADIUS};
+   whiteBox: `border:${BOX_BORDER};
+              border-radius:${BORDER_RADIUS};
               background-color:white;
              `
  };

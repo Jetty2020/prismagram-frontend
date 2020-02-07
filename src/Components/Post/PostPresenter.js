@@ -9,6 +9,7 @@ import React from "react";
    ${props => props.theme.whiteBox};
    width: 100%;
    max-width: 600px;
+   user-select: none;
    margin-bottom: 25px;
  `;
 
@@ -96,7 +97,8 @@ const Textarea = styled(TextareaAutosize)`
    likeCount,
    createdAt,
    newComment,
-   currentItem
+   currentItem,
+   toggleLike
  }) => (
    <Post>
      <Header>
@@ -114,7 +116,9 @@ const Textarea = styled(TextareaAutosize)`
      </Files>
      <Meta>
        <Buttons>
-         <Button>{isLiked ? <HeartFull /> : <HeartEmpty />}</Button>
+       <Button onClick={toggleLike}>
+           {isLiked ? <HeartFull /> : <HeartEmpty />}
+         </Button>
          <Button>
            <Comment />
          </Button>

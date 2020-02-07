@@ -6,5 +6,8 @@ import ApolloClient from "apollo-boost";
    clientState: {
      defaults,
      resolvers
+    },
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`
    }
  });

@@ -34,7 +34,7 @@ const Wrapper = styled.div`
          <GlobalStyles />
          <Router>
            <>
-             <Header />
+           {isLoggedIn && <Header />}
              <Wrapper>
                <Routes isLoggedIn={isLoggedIn} />
                <Footer />

@@ -16,6 +16,8 @@ import React from "react";
 
  const Loader = styled.div`
    animation: ${Animation} 1.5s linear infinite;
+   width: 100%;
+   text-align: center;
  `;
 
  export default () => (

@@ -9,6 +9,7 @@ import { gql } from "apollo-boost";
        likeCount
      }
      searchUser(term: $term) {
+       id
        avatar
        username
        isFollowing

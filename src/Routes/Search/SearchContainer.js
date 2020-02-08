@@ -12,5 +12,6 @@ import React from "react";
        term
      }
    });
+   
    return <SearchPresenter searchTerm={term} loading={loading} data={data} />;
  });

@@ -60,7 +60,7 @@ import React from "react";
  SquarePost.propTypes = {
    likeCount: PropTypes.number.isRequired,
    commentCount: PropTypes.number.isRequired,
-   file: PropTypes.string.isRequired
+   file: PropTypes.object.isRequired
  };
 
  export default SquarePost;
